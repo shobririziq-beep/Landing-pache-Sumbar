@@ -1,2 +1,2 @@
 # Landing-pache-Sumbar
-Website yang berkaitan dengan provinsi Sumater Barat
+Website yang berkaitan dengan provinsi Sumatera Barat
