@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temukan berbagai destinasi wisata alam, budaya, sejarah, pantai, danau, dan tempat rekreasi di Sumatera Barat.">
+    <meta name="theme-color" content="#101a17">
+
+    <title>Destinasi Wisata — Ranah Sumbar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="site-header"></div>
+
+    <main>
+
+        <section class="page-hero">
+            <p class="eyebrow" data-reveal="left">DISCOVER WEST SUMATRA</p>
+
+            <h1 data-reveal="up">
+                Destinasi <em>tanpa batas.</em>
+            </h1>
+
+            <p data-reveal="blur">
+                Temukan keindahan alam, pesisir, pegunungan, danau,
+                sejarah, budaya, hingga destinasi perkotaan Sumatera Barat.
+            </p>
+        </section>
+
+
+        <section class="catalogue-section">
+
+            <div class="section-heading" data-reveal="up">
+                <div>
+                    <p class="eyebrow">THE DESTINATION COLLECTION</p>
+                    <h2>Temukan tempat <em>favoritmu.</em></h2>
+                </div>
+            </div>
+
+            <div class="filter-panel" data-reveal="blur">
+
+                <div class="filter-control">
+                    <label for="search-input">Cari destinasi</label>
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Contoh: Gunung Talamau..."
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div class="filter-control">
+                    <label for="region-filter">Kabupaten / Kota</label>
+
+                    <select id="region-filter">
+                        <option value="">Semua wilayah</option>
+
+                        <option value="agam">Kabupaten Agam</option>
+                        <option value="dharmasraya">Kabupaten Dharmasraya</option>
+                        <option value="mentawai">Kepulauan Mentawai</option>
+                        <option value="limapuluh-kota">Lima Puluh Kota</option>
+                        <option value="padang-pariaman">Padang Pariaman</option>
+                        <option value="pasaman">Pasaman</option>
+                        <option value="pasaman-barat">Pasaman Barat</option>
+                        <option value="pesisir-selatan">Pesisir Selatan</option>
+                        <option value="sijunjung">Sijunjung</option>
+                        <option value="solok">Kabupaten Solok</option>
+                        <option value="solok-selatan">Solok Selatan</option>
+                        <option value="tanah-datar">Tanah Datar</option>
+                        <option value="bukittinggi">Kota Bukittinggi</option>
+                        <option value="padang">Kota Padang</option>
+                        <option value="padang-panjang">Padang Panjang</option>
+                        <option value="pariaman">Kota Pariaman</option>
+                        <option value="payakumbuh">Kota Payakumbuh</option>
+                        <option value="sawahlunto">Kota Sawahlunto</option>
+                        <option value="solok-kota">Kota Solok</option>
+                    </select>
+                </div>
+
+                <div class="filter-control">
+                    <label for="category-filter">Kategori</label>
+
+                    <select id="category-filter">
+                        <option value="">Semua kategori</option>
+                        <option value="Alam">Alam</option>
+                        <option value="Gunung">Gunung</option>
+                        <option value="Danau">Danau</option>
+                        <option value="Pantai">Pantai</option>
+                        <option value="Pulau">Pulau</option>
+                        <option value="Air Terjun">Air Terjun</option>
+                        <option value="Budaya">Budaya</option>
+                        <option value="Sejarah">Sejarah</option>
+                        <option value="Taman">Taman & Rekreasi</option>
+                        <option value="Kuliner">Kuliner</option>
+                        <option value="Belanja">Belanja</option>
+                        <option value="Kota">Wisata Kota</option>
+                    </select>
+                </div>
+
+                <button class="filter-reset" id="clear-filter" type="button">
+                    Reset Filter ↺
+                </button>
+
+            </div>
+
+
+            <div class="catalogue-meta">
+                <p id="result-count">Memuat destinasi...</p>
+                <p>RANAH SUMBAR <strong>— EXPLORE</strong></p>
+            </div>
+
+
+            <div class="destination-grid" id="destination-grid">
+                <!-- Kartu wisata dibuat otomatis oleh script.js -->
+            </div>
+
+        </section>
+
+        <section class="final-cta section-padding">
+            <p class="eyebrow">EXPLORE ALL REGIONS</p>
+            <h2>Kenali setiap sudut <em>Sumbar.</em></h2>
+
+            <p>
+                Lanjutkan penjelajahan ke seluruh kabupaten dan kota.
+            </p>
+
+            <a href="daerah.html" class="btn btn-primary">
+                Jelajahi 19 Wilayah <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
